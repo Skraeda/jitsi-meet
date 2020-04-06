@@ -162,7 +162,37 @@ class WelcomePage extends AbstractWelcomePage {
         const showAdditionalContent = this._shouldShowAdditionalContent();
         const showAdditionalToolbarContent = this._shouldShowAdditionalToolbarContent();
         const showResponsiveText = this._shouldShowResponsiveText();
+        return( 
+            <div
+            className = { `welcome ${showAdditionalContent
+                ? 'with-content' : 'without-content'}` }
+                id = 'welcome_page'>
+               
+               <div className = 'header'>
+                    <div className = 'header-text'>
+                    <p className = 'header-text-title'>
+                     <img src="images/skraeda_white_logo.png" width="500px"/>
+                     </p>
+                        <h1 className = 'header-text-title'>
+                        Skræða Telemedicine Technology
+                        </h1>
+                        <p className = 'header-text-description'>
+                            Skræða Telemedicine Technology enables remote communication between patients and healthcare professionals in a secure and easy manner.  Video conferencing is fully encrypted and secured military grade encryption technology.
+                        </p>
+                    
 
+                    </div>
+                </div>
+                            
+    
+    
+   
+          
+            </div>
+    
+
+          );
+/*
         return (
             <div
                 className = { `welcome ${showAdditionalContent
@@ -231,6 +261,7 @@ class WelcomePage extends AbstractWelcomePage {
                     : null }
             </div>
         );
+*/
     }
 
     /**

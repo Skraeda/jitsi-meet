@@ -14,13 +14,13 @@ var interfaceConfig = {
     INITIAL_TOOLBAR_TIMEOUT: 20000,
     TOOLBAR_TIMEOUT: 4000,
     TOOLBAR_ALWAYS_VISIBLE: false,
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',
+    DEFAULT_REMOTE_DISPLAY_NAME: 'Guest',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
-    SHOW_JITSI_WATERMARK: true,
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    SHOW_JITSI_WATERMARK: false,
+    JITSI_WATERMARK_LINK: 'https://telemed.sjukraskra.is',
 
     // if watermark is disabled by default, it can be shown only for guests
-    SHOW_WATERMARK_FOR_GUESTS: true,
+    SHOW_WATERMARK_FOR_GUESTS: false,
     SHOW_BRAND_WATERMARK: false,
     BRAND_WATERMARK_LINK: '',
     SHOW_POWERED_BY: false,
@@ -28,11 +28,11 @@ var interfaceConfig = {
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
     DISPLAY_WELCOME_PAGE_CONTENT: true,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
-    APP_NAME: 'Jitsi Meet',
-    NATIVE_APP_NAME: 'Jitsi Meet',
-    PROVIDER_NAME: 'Jitsi',
+    APP_NAME: 'Skræða Telemedicine Technology',
+    NATIVE_APP_NAME: 'Skræða Telemedicine Technology',
+    PROVIDER_NAME: 'Skræða',
     LANG_DETECTION: true, // Allow i18n to detect the system language
-    INVITATION_POWERED_BY: true,
+    INVITATION_POWERED_BY: false,
 
     /**
      * If we should show authentication block in profile
@@ -46,12 +46,19 @@ var interfaceConfig = {
      * enabled. Also, the "profile" button will not display for user's with a
      * jwt.
      */
-    TOOLBAR_BUTTONS: [
+    /*TOOLBAR_BUTTONS: [
         'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
         'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
         'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
         'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
         'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone'
+    ],*/
+
+    TOOLBAR_BUTTONS: [
+        'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+        'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'settings', 'raisehand',
+        'videoquality', 'filmstrip', 'stats', 'shortcuts',
+        'tileview', 'download', 'help', 'mute-everyone' 
     ],
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
@@ -114,7 +121,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: true,
+    MOBILE_APP_PROMO: false,
 
     /**
      * Maximum coeficient of the ratio of the large video to the visible area
@@ -128,7 +135,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://community.jitsi.org/',
+    SUPPORT_URL: 'https://skraeda.is/',
 
     /**
      * Whether the connection indicator icon should hide itself based on
