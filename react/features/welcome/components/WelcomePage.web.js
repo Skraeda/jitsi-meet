@@ -177,7 +177,7 @@ class WelcomePage extends AbstractWelcomePage {
                         Skræða Telemedicine Technology
                         </h1>
                         <p className = 'header-text-description'>
-                            Skræða Telemedicine Technology enables remote communication between patients and healthcare professionals in a secure and easy manner.  Video conferencing is fully encrypted and secured military grade encryption technology.
+                            Skræða Telemedicine Technology enables remote communication between patients and healthcare professionals in a secure and easy manner.  Video conferencing is fully encrypted and secured with military grade encryption technology.
                         </p>
                     
 
