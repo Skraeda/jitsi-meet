@@ -171,7 +171,7 @@ class WelcomePage extends AbstractWelcomePage {
                <div className = 'header'>
                     <div className = 'header-text'>
                     <p className = 'header-text-title'>
-                     <img src="images/skraeda_white_logo.png" width="500px"/>
+                     <img src="images/skraeda_white_logo.png" width="300px"/>
                      </p>
                         <h1 className = 'header-text-title'>
                         Skræða Telemedicine Technology
