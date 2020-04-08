@@ -14,7 +14,7 @@ import parseURLParams from '../react/features/base/config/parseURLParams';
  * NOTE: For optimal results this file should be included right after
  * external_connect.js.
  */
-
+console.log("Eythor do_connect checkpoint");
 if (typeof createConnectionExternally === 'function') {
     // URL params have higher priority than config params.
     // Do not use external connect if websocket is enabled.
@@ -26,12 +26,13 @@ if (typeof createConnectionExternally === 'function') {
         = parseURLParams(window.location, true, 'hash')['config.iAmRecorder'];
 
     let roomName;
-
+    console.log("Eythor do_connect checkpoint checking room");
     if (url && (roomName = getRoomName()) && !isRecorder) {
         url += `?room=${roomName}`;
 
         const token = parseURLParams(window.location, true, 'search').jwt;
 
+        console.log("Eythor do_connect checkpoint checking token");
         if (token) {
             url += `&token=${token}`;
         }
